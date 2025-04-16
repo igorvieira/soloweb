@@ -7,11 +7,7 @@ const App = () => {
       <header className="w-full py-6 px-4 md:py-8">
         <nav className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
-            <img
-              src="https://github.com/igorvieira/Solo/blob/main/assets/logo.png?raw=true"
-              alt="Logo"
-              className="w-10 h-10"
-            />
+            <img src="/solo.webp" alt="Logo" className="w-10 h-10" />
             <span className="text-xl font-bold">Solo</span>
           </div>
           <div className="hidden md:flex gap-8 flex align-center justify-center items-center">
