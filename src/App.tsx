@@ -45,7 +45,7 @@ const App = () => {
       <main className="flex-grow flex flex-col items-center justify-center w-full max-w-6xl mx-auto px-4 py-12 md:py-24">
         <div className="w-64 h-64 md:w-80 md:h-80 relative mb-8 md:mb-12">
           <img
-            src="https://github.com/igorvieira/Solo/blob/main/assets/logo.png?raw=true"
+            src="https://res.cloudinary.com/dje6m1lab/image/upload/v1745970240/solo_vdht4s.webp"
             alt="Logo principal"
             className="w-full h-full object-contain animate-pulse"
           />
