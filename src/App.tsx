@@ -54,7 +54,7 @@ const App = () => {
 
         <div className="flex flex-col gap-6 text-center max-w-3xl w-full">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
-            Powerful and simplified HTTP client
+            Powerful and simplified HTTP client ⚡
           </h1>
           <p className="text-lg md:text-xl text-gray-300 px-4 md:px-12">
             Solo is a modern HTTP client that makes testing, developing, and
