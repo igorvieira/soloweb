@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#snapshot
+generate-snapshot.sh
+snapshot.md
+
+# SEO backup files
+*.backup

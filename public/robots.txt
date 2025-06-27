@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://soloclient.com/sitemap.xml
+
+# Crawl-delay para bots mais agressivos
+Crawl-delay: 1
+
+# Bloquear arquivos desnecessários
+Disallow: /src/
+Disallow: /*.json
+Disallow: /node_modules/
+Disallow: /dist/
