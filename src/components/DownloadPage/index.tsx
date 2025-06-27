@@ -96,20 +96,20 @@ const DownloadPage = () => {
             </tbody>
           </table>
         </div>
-        {/* <div className="mb-8 mt-16"> */}
-        {/*   <h2 className="text-xl font-semibold mb-2 text-purple-300">Homebrew</h2> */}
-        {/*   <p className="mb-2">To install via Homebrew, run the following command:</p> */}
-        {/*   <div className="flex items-center gap-2 mb-2"> */}
-        {/*     <pre className="bg-gray-900 rounded-md px-4 py-2 text-purple-200 inline-block">brew install solo</pre> */}
-        {/*   </div> */}
-        {/*   <p className="text-sm text-gray-400"> */}
-        {/*     The release notes along with the release and source artifacts can be found under the <a href={`https://github.com/sreq-inc/Solo/releases/tag/${release?.tag_name}`} className="text-purple-300 underline">GitHub release</a>. */}
-        {/*   </p> */}
-        {/* </div> */}
-        {/* <p className="text-xs text-gray-500 text-left mt-8"> */}
-        {/**/}
-        {/*   By downloading and using Solo, I agree to the <a href="#" className="text-purple-300 underline">Privacy Policy</a> and <a href="#" className="text-purple-300 underline">Terms</a>. */}
-        {/* </p> */}
+        <div className="mb-8 mt-16">
+          <h2 className="text-xl font-semibold mb-2 text-purple-300">Homebrew</h2>
+          <p className="mb-2">To install via Homebrew, run the following command:</p>
+          <div className="flex items-center gap-2 mb-2">
+            <pre className="bg-gray-900 rounded-md px-4 py-2 text-purple-200 inline-block">brew install solo</pre>
+          </div>
+          <p className="text-sm text-gray-400">
+            The release notes along with the release and source artifacts can be found under the <a href={`https://github.com/sreq-inc/Solo/releases/tag/${release?.tag_name}`} className="text-purple-300 underline">GitHub release</a>.
+          </p>
+        </div>
+        <p className="text-xs text-gray-500 text-left mt-8">
+
+          By downloading and using Solo, I agree to the <a href="#" className="text-purple-300 underline">Privacy Policy</a> and <a href="#" className="text-purple-300 underline">Terms</a>.
+        </p>
       </main>
     </div>
   );
