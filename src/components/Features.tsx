@@ -1,7 +1,6 @@
 export const Features = () => {
   return (
-    <div className="flex flex-col items-center w-full text-white mt-40">
-
+    <div className="w-full max-w-6xl mx-auto px-4 mt-20">
       <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         <article className="bg-gray-800 rounded-lg p-6">
           <h2 className="text-xl font-semibold mb-3 text-purple-300">Intuitive Interface</h2>
