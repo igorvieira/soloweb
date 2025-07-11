@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
-// import DownloadPage from "./components/DownloadPage";
-// import DocumentationPage from "./components/DocumentationPage";
+import DownloadPage from "./components/DownloadPage";
+import { RoadmapPage } from "./components/RoadmapPage";
 import { Navbar } from "./components/Navbar";
 import { Features } from "./components/Features";
 import { Footer } from "./components/Footer";
@@ -25,29 +25,22 @@ const HomePage = () => (
             Powerful and simplified <br /> API client ⚡
           </h1>
           <p className="text-lg text-left md:text-xl text-gray-300">
-            Solo is a modern HTTP client that makes testing, developing, and
-            debugging APIs easy with an intuitive interface and advanced features.
+            Solo is a modern API client that makes testing, developing, and
+            debugging routes easy with an intuitive interface and advanced features.
           </p>
           <div className="flex gap-4 mt-4 justify-start">
             <Link
-              to="/"
+              to="/downloads"
               className="px-6 py-3 bg-purple-600 rounded-md font-medium hover:bg-purple-700 transition-colors flex items-center gap-2"
             >
               <ArrowDownTrayIcon className="w-4 h-4" />
               Download
             </Link>
-            {/* <Link
-              to="/downloads"
-              className="px-6 py-3 bg-purple-600 rounded-md font-medium hover:bg-purple-700 transition-colors flex items-center gap-2"
-            >
-              <ArrowDownTrayIcon className="w-4 h-4" />
-              Download Solo
-            </Link> */}
-            <Link to="/">
+            {/* <Link to="/">
               <button className="px-6 py-3 cursor-pointer border border-white rounded-md font-medium hover:bg-white hover:text-purple-900 transition-colors">
                 Documentation
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
 
@@ -70,8 +63,12 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Layout><HomePage /></Layout>} />
-        {/* <Route path="/downloads" element={<Layout><DownloadPage /></Layout>} /> */}
+        {/* <Route path="/pricing" element={<Layout><PricingPage /></Layout>} /> */}
+        <Route path="/downloads" element={<Layout><DownloadPage /></Layout>} />
         {/* <Route path="/documentation" element={<Layout><DocumentationPage /></Layout>} /> */}
+        <Route path="/roadmap" element={<Layout><RoadmapPage /></Layout>} />
+        {/* <Route path="/privacy" element={<Layout><PrivacyPolicyPage /></Layout>} /> */}
+        <Route path="*" element={<Layout><h1 className="text-2xl">404 - Page Not Found</h1></Layout>} />
       </Routes>
     </Router>
   );

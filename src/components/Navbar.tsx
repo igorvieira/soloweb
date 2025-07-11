@@ -20,29 +20,31 @@ export const Navbar = () => {
             Home
           </Link>
           <Link
-            to="/"
+            to="/downloads"
             className="hover:text-purple-300 transition-colors"
           >
             Download
           </Link>
-          {/*  <Link */}
-          {/*   to="/downloads" */}
-          {/*   className="hover:text-purple-300 transition-colors" */}
-          {/* > */}
-          {/*   Download */}
-          {/* </Link> */}
-          <Link
-            to="/"
+          {/* <Link
+            to="/pricing"
             className="hover:text-purple-300 transition-colors"
           >
-            Documentation
-          </Link>
+            Pricing
+          </Link> */}
+         
           {/* <Link
             to="/documentation"
             className="hover:text-purple-300 transition-colors"
           >
             Documentation
           </Link> */}
+
+          <Link
+            to="/roadmap"
+            className="hover:text-purple-300 transition-colors"
+          >
+            Roadmap
+          </Link>
           <a
             href="https://github.com/sreq-inc/solo"
             target="_blank"

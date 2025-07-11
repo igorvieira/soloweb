@@ -32,12 +32,11 @@ export const useGitHubRelease = (owner: string, repo: string): UseGitHubReleaseR
         setLoading(true);
         setError(null);
 
-        // Primeiro tenta buscar o latest.json
         try {
           const latestResponse = await fetch(
             `https://github.com/${owner}/${repo}/releases/latest/download/latest.json`
           );
-          
+
           if (latestResponse.ok) {
             const latestData = await latestResponse.json();
             setRelease(latestData);
@@ -47,7 +46,6 @@ export const useGitHubRelease = (owner: string, repo: string): UseGitHubReleaseR
           console.warn('Failed to fetch latest.json, falling back to GitHub API');
         }
 
-        // Fallback para a API do GitHub
         const apiResponse = await fetch(
           `https://api.github.com/repos/${owner}/${repo}/releases/latest`
         );
