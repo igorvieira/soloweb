@@ -49,28 +49,6 @@ export const RoadmapPage = () => {
               <h1 className="text-2xl md:text-3xl font-bold text-white">Solo Roadmap</h1>
               <p className="text-gray-400 mt-1 text-sm md:text-base">Track the future development of the project</p>
             </div>
-
-            {/* Year Navigation */}
-            <div className="flex items-center gap-3 md:gap-4">
-              <button
-                onClick={previousYear}
-                className="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors touch-manipulation"
-              >
-                <ChevronLeftIcon className="w-4 h-4 md:w-5 md:h-5" />
-              </button>
-
-              <div className="flex items-center gap-2">
-                <CalendarIcon className="w-4 h-4 md:w-5 md:h-5 text-purple-400" />
-                <span className="text-lg md:text-xl font-semibold">{currentYear}</span>
-              </div>
-
-              <button
-                onClick={nextYear}
-                className="p-2 rounded-lg bg-gray-800 hover:bg-gray-700 transition-colors touch-manipulation"
-              >
-                <ChevronRightIcon className="w-4 h-4 md:w-5 md:h-5" />
-              </button>
-            </div>
           </div>
         </div>
       </div>
