@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Solo',
-  tagline: 'Powerful and simplified HTTP client',
+  tagline: 'Powerful and simplified HTTP client ⚡',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -53,7 +53,14 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/solo.webp',
+    image: 'img/solo-og.png',
+    metadata: [
+      {name: 'keywords', content: 'http client, api testing, graphql, grpc, curl, offline-first, api development'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+      {property: 'og:type', content: 'website'},
+      {property: 'og:image:width', content: '1200'},
+      {property: 'og:image:height', content: '630'},
+    ],
     colorMode: {
       respectPrefersColorScheme: true,
     },
