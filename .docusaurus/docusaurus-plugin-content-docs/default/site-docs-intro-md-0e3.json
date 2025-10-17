@@ -1,0 +1,23 @@
+{
+  "id": "intro",
+  "title": "Getting Started with Solo",
+  "description": "Welcome to Solo, your powerful and simplified HTTP client for testing, developing, and debugging APIs.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/intro",
+  "permalink": "/docs/intro",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/igorvieira/Solo/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "HTTP Requests",
+    "permalink": "/docs/http-requests"
+  }
+}

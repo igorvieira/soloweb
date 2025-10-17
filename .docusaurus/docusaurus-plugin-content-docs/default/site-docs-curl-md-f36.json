@@ -1,0 +1,27 @@
+{
+  "id": "curl",
+  "title": "cURL Integration",
+  "description": "Solo provides seamless integration with cURL, allowing you to import existing cURL commands and export your requests as cURL for use in terminals or scripts.",
+  "source": "@site/docs/curl.md",
+  "sourceDirName": ".",
+  "slug": "/curl",
+  "permalink": "/docs/curl",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/igorvieira/Solo/tree/main/docs/curl.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "gRPC",
+    "permalink": "/docs/grpc"
+  },
+  "next": {
+    "title": "Variables",
+    "permalink": "/docs/variables"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "http-requests",
+  "title": "HTTP Requests",
+  "description": "Learn how to make HTTP requests with Solo to test and debug your REST APIs.",
+  "source": "@site/docs/http-requests.md",
+  "sourceDirName": ".",
+  "slug": "/http-requests",
+  "permalink": "/docs/http-requests",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/igorvieira/Solo/tree/main/docs/http-requests.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Getting Started with Solo",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "GraphQL",
+    "permalink": "/docs/graphql"
+  }
+}

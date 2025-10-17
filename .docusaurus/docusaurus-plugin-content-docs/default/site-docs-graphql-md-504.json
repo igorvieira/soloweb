@@ -1,0 +1,27 @@
+{
+  "id": "graphql",
+  "title": "GraphQL",
+  "description": "Solo provides full support for GraphQL APIs with schema introspection, query validation, and an intuitive editor.",
+  "source": "@site/docs/graphql.md",
+  "sourceDirName": ".",
+  "slug": "/graphql",
+  "permalink": "/docs/graphql",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/igorvieira/Solo/tree/main/docs/graphql.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "HTTP Requests",
+    "permalink": "/docs/http-requests"
+  },
+  "next": {
+    "title": "gRPC",
+    "permalink": "/docs/grpc"
+  }
+}

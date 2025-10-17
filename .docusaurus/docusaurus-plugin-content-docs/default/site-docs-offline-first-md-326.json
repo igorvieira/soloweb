@@ -1,0 +1,23 @@
+{
+  "id": "offline-first",
+  "title": "Offline-First Architecture",
+  "description": "Solo is designed with an offline-first approach, meaning all your data is stored locally on your machine. No cloud accounts, no internet dependency, complete privacy.",
+  "source": "@site/docs/offline-first.md",
+  "sourceDirName": ".",
+  "slug": "/offline-first",
+  "permalink": "/docs/offline-first",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/igorvieira/Solo/tree/main/docs/offline-first.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {
+    "sidebar_position": 8
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Collections & Folders",
+    "permalink": "/docs/collections"
+  }
+}

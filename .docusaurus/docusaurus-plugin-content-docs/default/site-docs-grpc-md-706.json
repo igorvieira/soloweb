@@ -1,0 +1,27 @@
+{
+  "id": "grpc",
+  "title": "gRPC",
+  "description": "Solo provides comprehensive support for testing and debugging gRPC services with schema introspection and request building.",
+  "source": "@site/docs/grpc.md",
+  "sourceDirName": ".",
+  "slug": "/grpc",
+  "permalink": "/docs/grpc",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/igorvieira/Solo/tree/main/docs/grpc.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "GraphQL",
+    "permalink": "/docs/graphql"
+  },
+  "next": {
+    "title": "cURL Integration",
+    "permalink": "/docs/curl"
+  }
+}

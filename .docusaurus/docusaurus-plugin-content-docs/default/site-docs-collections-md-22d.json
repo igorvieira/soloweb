@@ -1,0 +1,27 @@
+{
+  "id": "collections",
+  "title": "Collections & Folders",
+  "description": "Organize your API requests using Collections and Folders. Keep your workflow efficient by grouping related endpoints and structuring your API testing environment.",
+  "source": "@site/docs/collections.md",
+  "sourceDirName": ".",
+  "slug": "/collections",
+  "permalink": "/docs/collections",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/igorvieira/Solo/tree/main/docs/collections.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {
+    "sidebar_position": 7
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Variables",
+    "permalink": "/docs/variables"
+  },
+  "next": {
+    "title": "Offline-First Architecture",
+    "permalink": "/docs/offline-first"
+  }
+}

@@ -1,0 +1,286 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroContainer {
+  background: linear-gradient(to bottom, #111827, #581c87);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.header {
+  width: 100%;
+  padding: 1.5rem 1rem;
+}
+
+.nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoImage {
+  width: 40px;
+  height: 40px;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.navLinks {
+  display: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .navLinks {
+    display: flex;
+  }
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: #d8b4fe;
+}
+
+.downloadButton {
+  padding: 0.5rem 1.25rem;
+  background-color: #9333ea;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+.downloadButton:hover {
+  background-color: #7e22ce;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 6rem 1rem;
+  }
+}
+
+.logoContainer {
+  width: 256px;
+  height: 256px;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .logoContainer {
+    width: 320px;
+    height: 320px;
+    margin-bottom: 3rem;
+  }
+}
+
+.mainLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.logoGlow {
+  position: absolute;
+  inset: 0;
+  background-color: #a855f7;
+  opacity: 0.2;
+  border-radius: 9999px;
+  filter: blur(40px);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  max-width: 768px;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 4.5rem;
+  }
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #d1d5db;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.25rem;
+    padding: 0 3rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #9333ea;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+  text-decoration: none;
+}
+
+.primaryButton:hover {
+  background-color: #7e22ce;
+}
+
+.secondaryButton {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid white;
+  border-radius: 6px;
+  font-weight: 500;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.secondaryButton:hover {
+  background-color: white;
+  color: #581c87;
+}
+
+.footer {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #111827;
+  border-top: 1px solid #374151;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 3rem 0;
+  }
+}
+
+.footerContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .footerContent {
+    flex-direction: row;
+  }
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footerLogo {
+    margin-bottom: 0;
+  }
+}
+
+.footerLogoImage {
+  width: 32px;
+  height: 32px;
+}
+
+.footerLogoText {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.copyright {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.downloadIcon {
+  width: 16px;
+  height: 16px;
+}

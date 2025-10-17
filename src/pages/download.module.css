@@ -1,0 +1,365 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: calc(100vh - 60px);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #9333ea 0%, #7e22ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+[data-theme='dark'] .subtitle {
+  color: #9ca3af;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid #e5e7eb;
+  border-top-color: #9333ea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  color: #991b1b;
+  margin: 2rem 0;
+}
+
+[data-theme='dark'] .error {
+  background-color: #7f1d1d;
+  border-color: #991b1b;
+  color: #fecaca;
+}
+
+.error a {
+  color: #9333ea;
+  text-decoration: underline;
+}
+
+.downloadSection {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.versionInfo {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, rgba(147, 51, 234, 0.1) 0%, rgba(126, 34, 206, 0.1) 100%);
+  border-radius: 12px;
+}
+
+.versionInfo h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #9333ea;
+}
+
+[data-theme='dark'] .versionInfo h2 {
+  color: #c084fc;
+}
+
+.versionInfo p {
+  color: #6b7280;
+  margin: 0;
+}
+
+[data-theme='dark'] .versionInfo p {
+  color: #9ca3af;
+}
+
+.downloadTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .downloadTable {
+  background-color: #1a1a1a;
+  border-color: #374151;
+}
+
+.downloadTable thead {
+  background: linear-gradient(135deg, #9333ea 0%, #7e22ce 100%);
+}
+
+.downloadTable th {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.downloadTable tbody tr {
+  border-top: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+
+[data-theme='dark'] .downloadTable tbody tr {
+  border-top-color: #374151;
+}
+
+.downloadTable tbody tr:hover {
+  background-color: rgba(147, 51, 234, 0.05);
+}
+
+[data-theme='dark'] .downloadTable tbody tr:hover {
+  background-color: rgba(147, 51, 234, 0.1);
+}
+
+.downloadTable td {
+  padding: 1.25rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+.platform {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+}
+
+.platformIcon {
+  font-size: 1.5rem;
+}
+
+.fileName {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+[data-theme='dark'] .fileName {
+  color: #9ca3af;
+}
+
+.downloadButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #9333ea;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.downloadButton:hover {
+  background-color: #7e22ce;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.3);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+  color: #6b7280;
+}
+
+[data-theme='dark'] .footer {
+  border-top-color: #374151;
+  color: #9ca3af;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+}
+
+.footer a {
+  color: #9333ea;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+  overflow-x: auto;
+}
+
+[data-theme='dark'] .tabs {
+  border-bottom-color: #374151;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+[data-theme='dark'] .tab {
+  color: #9ca3af;
+}
+
+.tab:hover {
+  color: #9333ea;
+  background-color: rgba(147, 51, 234, 0.05);
+}
+
+[data-theme='dark'] .tab:hover {
+  color: #c084fc;
+  background-color: rgba(147, 51, 234, 0.1);
+}
+
+.tabActive {
+  border-bottom-color: #9333ea;
+  color: #9333ea;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .tabActive {
+  border-bottom-color: #c084fc;
+  color: #c084fc;
+}
+
+.tabIcon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.tabContent {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.noDownloads {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #6b7280;
+  font-size: 1rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  border: 1px dashed #e5e7eb;
+}
+
+[data-theme='dark'] .noDownloads {
+  background-color: #1a1a1a;
+  border-color: #374151;
+  color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .versionInfo {
+    padding: 1rem;
+  }
+
+  .versionInfo h2 {
+    font-size: 1.5rem;
+  }
+
+  .downloadTable {
+    font-size: 0.85rem;
+  }
+
+  .downloadTable th,
+  .downloadTable td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .platform {
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start;
+  }
+
+  .platformIcon {
+    font-size: 1.25rem;
+  }
+
+  .fileName {
+    font-size: 0.75rem;
+    word-break: break-all;
+  }
+
+  .downloadButton {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "collections",
+              "path": "/docs/collections",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "curl",
+              "path": "/docs/curl",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "graphql",
+              "path": "/docs/graphql",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "grpc",
+              "path": "/docs/grpc",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "http-requests",
+              "path": "/docs/http-requests",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "offline-first",
+              "path": "/docs/offline-first",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "variables",
+              "path": "/docs/variables",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

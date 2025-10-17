@@ -1,0 +1,27 @@
+{
+  "id": "variables",
+  "title": "Variables",
+  "description": "Variables in Solo allow you to create reusable, dynamic values across your requests. Use variables to manage different environments, avoid hardcoding values, and keep your API configurations flexible.",
+  "source": "@site/docs/variables.md",
+  "sourceDirName": ".",
+  "slug": "/variables",
+  "permalink": "/docs/variables",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/igorvieira/Solo/tree/main/docs/variables.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "cURL Integration",
+    "permalink": "/docs/curl"
+  },
+  "next": {
+    "title": "Collections & Folders",
+    "permalink": "/docs/collections"
+  }
+}
