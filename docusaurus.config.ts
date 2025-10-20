@@ -1,107 +1,143 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: 'Solo',
-  tagline: 'Powerful and simplified HTTP client ⚡',
-  favicon: 'img/favicon.ico',
+  title: "Solo",
+  tagline: "Powerful and simplified HTTP client ⚡",
+  favicon: "img/favicon.ico",
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
-  url: 'https://solo-http-client.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  url: "https://www.soloclient.com",
+  baseUrl: "/",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'igorvieira', // Usually your GitHub org/user name.
-  projectName: 'Solo', // Usually your repo name.
+  organizationName: "igorvieira",
+  projectName: "Solo",
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "throw",
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/igorvieira/Solo/tree/main/',
+          sidebarPath: "./sidebars.ts",
+          editUrl: "https://github.com/igorvieira/Solo/tree/main/",
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/solo-og.png',
+    image: "img/solo-og.png",
     metadata: [
-      {name: 'keywords', content: 'http client, api testing, graphql, grpc, curl, offline-first, api development'},
-      {name: 'twitter:card', content: 'summary_large_image'},
-      {property: 'og:type', content: 'website'},
-      {property: 'og:image:width', content: '1200'},
-      {property: 'og:image:height', content: '630'},
+      {
+        name: "description",
+        content:
+          "Solo is a modern HTTP client that makes testing, developing, and debugging APIs easy with an intuitive interface. Support for HTTP, GraphQL, and gRPC. Offline-first and privacy-focused.",
+      },
+      {
+        name: "keywords",
+        content:
+          "http client, api testing, graphql, grpc, curl, offline-first, api development, rest client, postman alternative",
+      },
+      { name: "author", content: "Igor Vieira" },
+      {
+        property: "og:title",
+        content: "Solo - Powerful and simplified HTTP client ⚡",
+      },
+      {
+        property: "og:description",
+        content:
+          "Powerful and simplified HTTP client for testing APIs. Support for HTTP, GraphQL, and gRPC. Work offline with complete privacy - your API keys never leave your machine.",
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://www.soloclient.com" },
+      {
+        property: "og:image",
+        content: "https://www.soloclient.com/img/solo-og.png",
+      },
+      { property: "og:image:type", content: "image/png" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      {
+        property: "og:image:alt",
+        content: "Solo HTTP Client - Powerful and simplified HTTP client ⚡",
+      },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@igorvieira" },
+      { name: "twitter:creator", content: "@igorvieira" },
+      {
+        name: "twitter:title",
+        content: "Solo - Powerful and simplified HTTP client ⚡",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Modern HTTP client for testing APIs. Offline-first, supports HTTP, GraphQL & gRPC. Complete privacy for your API development.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://www.soloclient.com/img/solo-og.png",
+      },
+      {
+        name: "twitter:image:alt",
+        content: "Solo HTTP Client - Powerful and simplified HTTP client ⚡",
+      },
     ],
     colorMode: {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Solo',
+      title: "Solo",
       logo: {
-        alt: 'Solo Logo',
-        src: 'img/solo.webp',
+        alt: "Solo Logo",
+        src: "img/solo.webp",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentation',
+          type: "docSidebar",
+          sidebarId: "tutorialSidebar",
+          position: "left",
+          label: "Documentation",
         },
         {
-          href: 'https://github.com/igorvieira/Solo',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/igorvieira/Solo",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Getting Started',
-              to: '/docs/intro',
+              label: "Getting Started",
+              to: "/docs/intro",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/igorvieira/Solo',
+              label: "GitHub",
+              href: "https://github.com/igorvieira/Solo",
             },
           ],
         },

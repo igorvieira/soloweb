@@ -28,7 +28,7 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "url": "https://solo-http-client.com",
+  "url": "https://www.soloclient.com",
   "baseUrl": "/",
   "organizationName": "igorvieira",
   "projectName": "Solo",
@@ -60,16 +60,40 @@ export default {
     "image": "img/solo-og.png",
     "metadata": [
       {
-        "name": "keywords",
-        "content": "http client, api testing, graphql, grpc, curl, offline-first, api development"
+        "name": "description",
+        "content": "Solo is a modern HTTP client that makes testing, developing, and debugging APIs easy with an intuitive interface. Support for HTTP, GraphQL, and gRPC. Offline-first and privacy-focused."
       },
       {
-        "name": "twitter:card",
-        "content": "summary_large_image"
+        "name": "keywords",
+        "content": "http client, api testing, graphql, grpc, curl, offline-first, api development, rest client, postman alternative"
+      },
+      {
+        "name": "author",
+        "content": "Igor Vieira"
+      },
+      {
+        "property": "og:title",
+        "content": "Solo - Powerful and simplified HTTP client ⚡"
+      },
+      {
+        "property": "og:description",
+        "content": "Powerful and simplified HTTP client for testing APIs. Support for HTTP, GraphQL, and gRPC. Work offline with complete privacy - your API keys never leave your machine."
       },
       {
         "property": "og:type",
         "content": "website"
+      },
+      {
+        "property": "og:url",
+        "content": "https://www.soloclient.com"
+      },
+      {
+        "property": "og:image",
+        "content": "https://www.soloclient.com/img/solo-og.png"
+      },
+      {
+        "property": "og:image:type",
+        "content": "image/png"
       },
       {
         "property": "og:image:width",
@@ -78,6 +102,38 @@ export default {
       {
         "property": "og:image:height",
         "content": "630"
+      },
+      {
+        "property": "og:image:alt",
+        "content": "Solo HTTP Client - Powerful and simplified HTTP client ⚡"
+      },
+      {
+        "name": "twitter:card",
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:site",
+        "content": "@igorvieira"
+      },
+      {
+        "name": "twitter:creator",
+        "content": "@igorvieira"
+      },
+      {
+        "name": "twitter:title",
+        "content": "Solo - Powerful and simplified HTTP client ⚡"
+      },
+      {
+        "name": "twitter:description",
+        "content": "Modern HTTP client for testing APIs. Offline-first, supports HTTP, GraphQL & gRPC. Complete privacy for your API development."
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://www.soloclient.com/img/solo-og.png"
+      },
+      {
+        "name": "twitter:image:alt",
+        "content": "Solo HTTP Client - Powerful and simplified HTTP client ⚡"
       }
     ],
     "colorMode": {
